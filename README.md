@@ -182,8 +182,8 @@ Example JSON response:
 
 ### Contributors
 👤  **Kelsey Thompson**
-![LinkedIn][linkedin-badge](https://www.linkedin.com/in/knthompson2/)
-![Github][github-badge]](https://github.com/knthompson2)
+- [GitHub](https://github.com/knthompson2)
+- [LinkedIn](https://www.linkedin.com/in/knthompson2/)
 
 
 <!-- Markdown link & img dfn's -->
