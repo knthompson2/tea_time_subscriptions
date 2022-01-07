@@ -4,6 +4,7 @@ class Tea < ApplicationRecord
 
   validates_presence_of :tyep
   validates :tyep, uniqueness: true
+  validates_presence_of :tyep
   validates_presence_of :description
   validates_presence_of :temperature
   validates_presence_of :brew_time

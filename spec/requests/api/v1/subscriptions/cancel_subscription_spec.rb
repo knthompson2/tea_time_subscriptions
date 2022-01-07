@@ -9,7 +9,7 @@ RSpec.describe 'cancel_subscription' do
 
       expect(subscription.status).to eq("active")
 
-      post "/api/v1/customers/#{customer.id}/subscriptions/#{subscription.id}", params: {subscription_id: subscription.id, status: "canceled"}
+      patch "/api/v1/customers/#{customer.id}/subscriptions/#{subscription.id}", params: {subscription_id: subscription.id, status: "canceled"}
 
       subscription.reload
       expect(response).to be_successful
@@ -23,8 +23,8 @@ RSpec.describe 'cancel_subscription' do
       tea = Tea.create!(tyep: "Lavendar", description: "Lavendary tea with a hint of more lavendar", temperature: "Hot", brew_time: 12)
       Subscription.create!(title: "#{tea.tyep} - quarterly", customer_id: customer.id, tea_id: tea.id, price: 7.99, status: "active", frequency: "quarterly")
 
-      post "/api/v1/customers/#{customer.id}/subscriptions/2", params: {subscription_id: 2, status: "canceled"}
-      
+      patch "/api/v1/customers/#{customer.id}/subscriptions/2", params: {subscription_id: 2, status: "canceled"}
+
       expect(response).to_not be_successful
     end
   end

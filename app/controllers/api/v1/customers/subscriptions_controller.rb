@@ -34,6 +34,6 @@ class Api::V1::Customers::SubscriptionsController < ApplicationController
   private
 
   def subscription_params
-    params.permit(:price, :status, :frequency, :customer_id, :tea_id)
+    params.permit(:title, :price, :status, :frequency, :customer_id, :tea_id)
   end
 end
