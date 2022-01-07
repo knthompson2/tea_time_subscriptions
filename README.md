@@ -2,6 +2,7 @@
 
 ## Table of contents
 - [Overview](#overview)
+- [Setup](#setup)
 - [Endpoints](#endpoints)
 - [Schema](#schema)
 - [Technologies](#technologies)
